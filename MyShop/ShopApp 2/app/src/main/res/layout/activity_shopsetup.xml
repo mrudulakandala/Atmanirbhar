@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/p1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="5dp"
+                android:text="Name of the shop"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+
+            <EditText
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/etShopName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableEnd="@drawable/ic_phone"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="5dp"
+                android:text="Category"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:background="@drawable/spinner_bg"
+                android:layout_width="match_parent"
+                android:entries="@array/category_arrays"
+                android:layout_marginBottom="5dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="5dp"
+                android:text="Other Category"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+
+            <EditText
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/etOtherCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="5dp"
+                android:text="Address"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+
+            <EditText
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/etDno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:inputType="text"
+                android:padding="5dp"
+                android:hint="D.No, Street Name"
+                android:textColor="@color/black" />
+            <EditText
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/etDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:inputType="text"
+                android:padding="5dp"
+                android:hint="District"
+                android:textColor="@color/black" />
+            <EditText
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/etPincode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_bg"
+                android:inputType="text"
+                android:padding="5dp"
+                android:hint="State, Pincode"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/layoutBtns"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_gravity="end"
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_gravity="end"
+                android:id="@+id/btnCreateShop"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/create_shop"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

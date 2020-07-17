@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+    <string name="phone">Phone</string>
+    <string name="otp">OTP</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="registration">Registration</string>
+    <string name="setup_shop">Setup Shop</string>
+    <string name="start_buying">Start Buying</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="create_shop">Create Shop</string>
+    <string name="save">Save</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="seller_dashboard">Seller DashBoard</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="add_item">Add Item</string>
+    <string name="search_shops">Search Shops</string>
+    <string name="search_category">Search Category</string>
+    <string name="search_name">Search Name</string>
+    <string name="bootom_tab_1">Buy</string>
+    <string name="bootom_tab_2">Sell</string>
+    <string name="bootom_tab_3">Profile</string>
+
+    <string-array name="gender_arrays">
+        <item>Gender *</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Prefer not to say</item>
+    </string-array>
+    <string-array name="category_arrays">
+        <item>Select Category</item>
+        <item>ABCD</item>
+        <item>12345</item>
+        <item>12ADAD</item>
+    </string-array>
+
+    <string-array name="location_arrays">
+        <item>Select Locality</item>
+        <item>Location 1</item>
+        <item>Location 2</item>
+        <item>Location 3</item>
+    </string-array>
+
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Buy</string>
+    <string name="title_dashboard">Sell</string>
+    <string name="title_notifications">Profile</string>
+    <string name="search_location"><![CDATA[Search Shops <Location>]]></string>
+    <string name="search_by_shop_name">Search by Shop Name</string>
+    <string name="search">Search</string>
+    <string name="shop_title">Shops</string>
+    <string name="call_seller">Call Seller</string>
+    <string name="chat_with_seller">Chat With Seller</string>
+    <string name="shops_list">Shops</string>
+    <string name="shop">Shop</string>
+    <string name="product">Product</string>
+    <string name="product_list">Product List</string>
+    <string name="profile_name">Name</string>
+    <string name="user_type">User Type</string>
+    <string name="settings">Settings</string>
+    <string name="language">select Language</string>
+    <string name="logout">Log Out</string>
+    <string name="enter_user_name">Name</string>
+    <string name="enter_password">Shop Name</string>
+    <string name="my_shop">My Shop</string>
+    <string name="welcome">Welcome</string>
+</resources>
