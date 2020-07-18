@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/dashboardToolbar"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/dashboardToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/p1"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageLogo"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="5dp"
+                android:text="Name of the shop"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+
+            <EditText
+
+                android:id="@+id/etShopName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableEnd="@drawable/ic_phone"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnSetupShop"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:text="@string/add_item"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnStartBuying"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:text="@string/delete_item"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

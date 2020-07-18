@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/p1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <EditText
+
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <EditText
+
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:digits="0123456789"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Date of Birth"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Gender"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/gender_arrays" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <EditText
+
+                    android:id="@+id/etDno"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="D.No, Street Name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+
+                    android:id="@+id/etDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="District"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+
+                    android:id="@+id/etPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="State, Pincode"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Category"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/category_arrays" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:text="Other"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+
+                <EditText
+
+                    android:id="@+id/etOtherCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutBtns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
